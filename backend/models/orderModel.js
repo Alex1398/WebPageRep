@@ -13,7 +13,7 @@ const orderSchema = mongoose.Schema(
             qty: { type: Number, required: true },  //quantity
             image: { type: String, required: true },
             price: { type: Number, required: true },
-            prpduct: {  // bind of which product was ordered
+            product: {  // bind of which product was ordered
                 type: mongoose.Schema.Types.ObjectId,
                 required: true,
                 ref: 'Product'
